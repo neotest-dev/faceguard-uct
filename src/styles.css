@@ -7,4 +7,9 @@ html { scroll-behavior: smooth; }
 .camera-box:has(video[src]) { background: #071b35; }
 .camera-box video { min-height: 100%; }
 .face-guide { position: absolute; width: 35%; height: 74%; border: 2px dashed rgba(103,232,249,.75); border-radius: 48% 48% 44% 44%; pointer-events: none; }
+.table-wrap { overflow-x: auto; width: 100%; }
+.table-wrap table { width: 100%; border-collapse: collapse; text-align: left; font-size: .875rem; }
+.table-wrap th { background: #f8fafc; color: #475569; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; }
+.table-wrap th, .table-wrap td { border-bottom: 1px solid #e2e8f0; padding: .75rem .65rem; white-space: nowrap; }
+.table-wrap td:last-child { white-space: normal; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

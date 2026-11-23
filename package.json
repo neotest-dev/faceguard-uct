@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": {"dev":"vite --host 0.0.0.0","build":"tsc -b && vite build","preview":"vite preview --host 0.0.0.0","test":"vitest run"},
+  "scripts": {"dev":"vite --host 0.0.0.0","build":"tsc -b && tsc --noEmit -p tsconfig.api.json && vite build","preview":"vite preview --host 0.0.0.0","test":"vitest run"},
   "dependencies": {"@supabase/supabase-js":"^2.49.1","face-api.js":"^0.22.2","lucide-react":"^0.468.0","react":"^18.3.1","react-dom":"^18.3.1"},
-  "devDependencies": {"@tailwindcss/vite":"^4.0.6","@types/react":"^18.3.18","@types/react-dom":"^18.3.5","@vitejs/plugin-react":"^4.3.4","tailwindcss":"^4.0.6","typescript":"~5.7.2","vite":"^6.1.0","vitest":"^5.1.1"},
+  "devDependencies": {"@tailwindcss/vite":"^4.0.6","@types/node":"^22.13.4","@types/react":"^18.3.18","@types/react-dom":"^18.3.5","@vitejs/plugin-react":"^4.3.4","tailwindcss":"^4.0.6","typescript":"~5.7.2","vite":"^6.1.0","vitest":"^5.1.1"},
   "overrides": {"node-fetch":"^2.7.0"}
 }
