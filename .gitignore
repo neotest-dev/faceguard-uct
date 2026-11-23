@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+wheelhouse/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Configuración y datos privados
+.env
+*.db
+*.sqlite
+*.sqlite3
+database/*
+!database/.gitkeep
+!database/README.md
+logs/
+*.log
+
+# Pesos/modelos descargados; nunca versionar datos biométricos
+models/*
+!models/.gitkeep
+!models/README.md
+*.onnx
+*.pth
+*.pt
+*.engine
+biometric_data/
+captures/
+
+# certificados TLS locales (incluyen la llave privada)
+.certs/
+
+# Windows / IDE
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# React/Vite
+node_modules/
+dist/
+.env.local
+.vercel/
